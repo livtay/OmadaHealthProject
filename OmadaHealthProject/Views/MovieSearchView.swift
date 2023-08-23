@@ -59,7 +59,11 @@ struct MovieSearchView: View {
 struct MovieSearchView_Previews: PreviewProvider {
   
   static var previews: some View {
-    MovieSearchView(viewModel: MovieSearchViewModel(movieService: TMDBService()))
+    MovieSearchView(
+      viewModel: MovieSearchViewModel(
+        movieService: TMDBService.live
+      )
+    )
   }
   
 }

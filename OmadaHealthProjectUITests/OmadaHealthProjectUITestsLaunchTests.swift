@@ -1,10 +1,3 @@
-//
-//  OmadaHealthProjectUITestsLaunchTests.swift
-//  OmadaHealthProjectUITests
-//
-//  Created by Olivia Taylor on 8/22/23.
-//
-
 import XCTest
 
 final class OmadaHealthProjectUITestsLaunchTests: XCTestCase {

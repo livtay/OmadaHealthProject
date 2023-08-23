@@ -45,11 +45,10 @@ private extension MovieSearchViewModel {
   
   func loadMovies() async throws {
     do {
-      try await movieService.getMovies(for: searchText) { movies in
-        DispatchQueue.main.async {
-          let results = movies?.results ?? []
-          self.state = results.isEmpty ? .noResults : .success(results)
-        }
+      let movies = try await movieService.getMovieList(searchText)
+      DispatchQueue.main.async {
+        let results = movies?.results ?? []
+        self.state = results.isEmpty ? .noResults : .success(results)
       }
     } catch let error {
       // Handle the error in the UI by setting the state

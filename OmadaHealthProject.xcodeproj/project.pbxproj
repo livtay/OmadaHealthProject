@@ -13,7 +13,7 @@
 		48539ACB2A95191D006C188F /* MovieSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48539ACA2A95191D006C188F /* MovieSearchView.swift */; };
 		48539ACD2A95191F006C188F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48539ACC2A95191F006C188F /* Assets.xcassets */; };
 		48539AD02A95191F006C188F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48539ACF2A95191F006C188F /* Preview Assets.xcassets */; };
-		48539ADA2A95191F006C188F /* OmadaHealthProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48539AD92A95191F006C188F /* OmadaHealthProjectTests.swift */; };
+		48539ADA2A95191F006C188F /* TMDBServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48539AD92A95191F006C188F /* TMDBServiceTests.swift */; };
 		48539AE42A95191F006C188F /* OmadaHealthProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48539AE32A95191F006C188F /* OmadaHealthProjectUITests.swift */; };
 		48539AE62A95191F006C188F /* OmadaHealthProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48539AE52A95191F006C188F /* OmadaHealthProjectUITestsLaunchTests.swift */; };
 		48539AF72A95215A006C188F /* MovieSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48539AF62A95215A006C188F /* MovieSearchViewModel.swift */; };
@@ -23,6 +23,8 @@
 		48539B012A95421A006C188F /* MovieRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48539B002A95421A006C188F /* MovieRow.swift */; };
 		48539B032A95667F006C188F /* MovieDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48539B022A95667F006C188F /* MovieDetailsView.swift */; };
 		48539B072A95CD4E006C188F /* TMDBServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48539B062A95CD4E006C188F /* TMDBServiceError.swift */; };
+		48539B0B2A969F91006C188F /* MovieSearchViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48539B0A2A969F91006C188F /* MovieSearchViewModelTests.swift */; };
+		48539B0D2A96A1A4006C188F /* MovieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48539B0C2A96A1A4006C188F /* MovieTests.swift */; };
 		5730B5C3BCA7340BD8433736 /* Pods_OmadaHealthProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 951FFEDBB5CC611EDBD7CF8D /* Pods_OmadaHealthProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,7 +56,7 @@
 		48539ACC2A95191F006C188F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48539ACF2A95191F006C188F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		48539AD52A95191F006C188F /* OmadaHealthProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OmadaHealthProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		48539AD92A95191F006C188F /* OmadaHealthProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmadaHealthProjectTests.swift; sourceTree = "<group>"; };
+		48539AD92A95191F006C188F /* TMDBServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBServiceTests.swift; sourceTree = "<group>"; };
 		48539ADF2A95191F006C188F /* OmadaHealthProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OmadaHealthProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		48539AE32A95191F006C188F /* OmadaHealthProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmadaHealthProjectUITests.swift; sourceTree = "<group>"; };
 		48539AE52A95191F006C188F /* OmadaHealthProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmadaHealthProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -65,6 +67,8 @@
 		48539B002A95421A006C188F /* MovieRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRow.swift; sourceTree = "<group>"; };
 		48539B022A95667F006C188F /* MovieDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsView.swift; sourceTree = "<group>"; };
 		48539B062A95CD4E006C188F /* TMDBServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBServiceError.swift; sourceTree = "<group>"; };
+		48539B0A2A969F91006C188F /* MovieSearchViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchViewModelTests.swift; sourceTree = "<group>"; };
+		48539B0C2A96A1A4006C188F /* MovieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTests.swift; sourceTree = "<group>"; };
 		618FCD35E7D17243D3B62FEA /* Pods_OmadaHealthProject_OmadaHealthProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OmadaHealthProject_OmadaHealthProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DB0F6F0D3C7375FB7A4C571 /* Pods-OmadaHealthProject-OmadaHealthProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmadaHealthProject-OmadaHealthProjectUITests.release.xcconfig"; path = "Target Support Files/Pods-OmadaHealthProject-OmadaHealthProjectUITests/Pods-OmadaHealthProject-OmadaHealthProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
 		951FFEDBB5CC611EDBD7CF8D /* Pods_OmadaHealthProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OmadaHealthProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,7 +151,9 @@
 		48539AD82A95191F006C188F /* OmadaHealthProjectTests */ = {
 			isa = PBXGroup;
 			children = (
-				48539AD92A95191F006C188F /* OmadaHealthProjectTests.swift */,
+				48539B0A2A969F91006C188F /* MovieSearchViewModelTests.swift */,
+				48539B0C2A96A1A4006C188F /* MovieTests.swift */,
+				48539AD92A95191F006C188F /* TMDBServiceTests.swift */,
 			);
 			path = OmadaHealthProjectTests;
 			sourceTree = "<group>";
@@ -454,7 +460,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48539ADA2A95191F006C188F /* OmadaHealthProjectTests.swift in Sources */,
+				48539ADA2A95191F006C188F /* TMDBServiceTests.swift in Sources */,
+				48539B0B2A969F91006C188F /* MovieSearchViewModelTests.swift in Sources */,
+				48539B0D2A96A1A4006C188F /* MovieTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

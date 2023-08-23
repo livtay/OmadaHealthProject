@@ -10,7 +10,7 @@ struct OmadaHealthProjectApp: App {
   }
   
   private func makeSearchView() -> MovieSearchView {
-    let tmdbService = TMDBService()
+    let tmdbService = TMDBService.live
     let viewModel = MovieSearchViewModel(movieService: tmdbService)
     return MovieSearchView(viewModel: viewModel)
   }
