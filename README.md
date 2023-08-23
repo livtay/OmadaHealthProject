@@ -1,4 +1,4 @@
 # OmadaHealthProject
 
-/Users/oliviataylor/Desktop/Simulator Screen Recording - iPhone 14 Pro - 2023-08-23 at 16.37.10.mp4
+https://github.com/livtay/OmadaHealthProject/assets/20843932/8513735c-9792-47aa-b89d-8c8fc12f70fe
 
