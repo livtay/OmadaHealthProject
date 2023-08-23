@@ -1,10 +1,14 @@
 import Foundation
 
-class TMDBService {
+struct TMDBService {
   
   private let apiKey = "b11fc621b3f7f739cb79b50319915f1d"
   
-  func getMovies(for query: String, page: Int = 1, completion: @escaping (MoviesResponse?) -> Void) {
+  /// Creates a URL request for a search query and decodes to Movies Response
+  /// - Parameter query: string to search
+  /// - Parameter page: page of results to return, default 1
+  /// - Parameter completion: completion handler that returns the response
+  func getMovies(for query: String, page: Int = 1, completion: @escaping (MoviesResponse?) -> Void) async throws {
     var urlComponents = URLComponents()
     urlComponents.scheme = "https"
     urlComponents.host = "api.themoviedb.org"
@@ -18,20 +22,19 @@ class TMDBService {
     urlComponents.queryItems = queryItems
     
     if let url = urlComponents.url {
-      let urlRequest = URLRequest(url: url)
-      URLSession.shared.dataTask(with: urlRequest, completionHandler: { data, response, error in
-        guard let data = data else {
-          completion(nil)
-          return
-        }
-        let decoder = JSONDecoder()
-        decoder.keyDecodingStrategy = .convertFromSnakeCase
-        let movies = try? decoder.decode(MoviesResponse.self, from: data)
+      let (data, _) = try await URLSession.shared.data(from: url)
+      let decoder = JSONDecoder()
+      decoder.keyDecodingStrategy = .convertFromSnakeCase
+      do {
+        let movies = try decoder.decode(MoviesResponse.self, from: data)
         completion(movies)
-      })
-      .resume()
+      } catch {
+        throw TMDBServiceError.decoding
+      }
+      return
+    } else {
+      throw TMDBServiceError.badURL
     }
-    // TODO: handle error
   }
   
 }

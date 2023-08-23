@@ -10,12 +10,15 @@ struct Movie: Decodable, Equatable, Hashable, Identifiable {
   let voteAverage: Double?
   
   enum CodingKeys: String, CodingKey {
-    case id, title, overview
+    case id
+    case title
+    case overview
     case releaseDate
     case posterPath
     case voteAverage
   }
   
+  // Changes date format for details page
   var formattedDate: String {
     let dateFormatter = DateFormatter()
     dateFormatter.dateFormat = "yyyy-MM-dd"
@@ -27,6 +30,7 @@ struct Movie: Decodable, Equatable, Hashable, Identifiable {
     }
   }
 
+  // Gets release year from release date
   var releaseYear: String {
     let dateFormatter = DateFormatter()
     dateFormatter.dateFormat = "yyyy-MM-dd"
@@ -37,6 +41,7 @@ struct Movie: Decodable, Equatable, Hashable, Identifiable {
     return String(year)
   }
   
+  // Takes poster path and returns full image URL
   var imageURL: String {
     return "https://image.tmdb.org/t/p/original/\(posterPath ?? "")"
   }

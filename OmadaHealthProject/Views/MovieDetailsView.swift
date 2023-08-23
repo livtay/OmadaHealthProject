@@ -3,6 +3,8 @@ import SwiftUI
 struct MovieDetailsView: View {
   var movie: Movie
   
+  // MARK: - Views
+  
   var body: some View {
     ScrollView {
       VStack {
@@ -83,6 +85,8 @@ struct MovieDetailsView: View {
   }
   
 }
+
+// MARK: - Preview provider
 
 struct MovieDetailsView_Previews: PreviewProvider {
   static var previews: some View {

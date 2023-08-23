@@ -8,7 +8,7 @@ struct MovieSearchView: View {
   
   @State private var showDetailsView = false
   
-  // MARK: - View
+  // MARK: - Views
   
   var body: some View {
     NavigationStack {
@@ -19,24 +19,26 @@ struct MovieSearchView: View {
   }
   
   @ViewBuilder private var movieSearchView: some View {
-    if viewModel.movies.isEmpty {
+    switch viewModel.state {
+    case .noResults:
       emptyStateView
-    } else {
+    case .success(let movies):
       ScrollView {
         VStack {
-          ForEach(viewModel.movies) { movie in
+          ForEach(movies) { movie in
             NavigationLink {
               MovieDetailsView(movie: movie)
                 .navigationBarTitleDisplayMode(.inline)
             } label: {
               MovieRow(movie: movie)
-              // TODO: fetch more pages here
             }
             .buttonStyle(PlainButtonStyle())
           }
         }
       }
       .scrollDismissesKeyboard(.immediately)
+    case .error(let error):
+      errorStateView(error)
     }
   }
   
@@ -45,7 +47,14 @@ struct MovieSearchView: View {
       .foregroundColor(Color(.systemGray))
   }
   
+  private func errorStateView(_ error: Error) -> some View {
+    Text((error as? TMDBServiceError)?.description ?? "Something went wrong")
+      .foregroundColor(Color(.systemGray))
+  }
+  
 }
+
+// MARK: - Preview provider
 
 struct MovieSearchView_Previews: PreviewProvider {
   

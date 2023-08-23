@@ -3,6 +3,8 @@ import SwiftUI
 struct MovieRow: View {
   var movie: Movie
   
+  // MARK: - View
+  
   var body: some View {
     VStack {
       HStack(alignment: .top, spacing: 16) {
@@ -45,6 +47,8 @@ struct MovieRow: View {
   }
   
 }
+
+// MARK: - Preview provider
 
 struct MovieRow_Previews: PreviewProvider {
   static var previews: some View {

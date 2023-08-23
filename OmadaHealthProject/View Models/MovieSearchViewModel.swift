@@ -3,31 +3,58 @@ import Foundation
 
 final class MovieSearchViewModel: ObservableObject {
   
-  let movieService: TMDBService
+  // States of view model to alter the UI
+  enum MovieSearchState {
+    case noResults
+    case success(_ movies: [Movie])
+    case error(_ error: Error)
+  }
   
+  let movieService: TMDBService
   @Published var searchText = ""
-  @Published private(set) var movies: [Movie] = []
+  
+  // MARK: - Private properties
+  
+  @Published private(set) var state: MovieSearchState = .noResults
   private var cancellables = Set<AnyCancellable>()
+  
+  // MARK: - Initializer
   
   init(movieService: TMDBService) {
     self.movieService = movieService
     debounceTextChanges()
   }
   
+}
+
+// MARK: - Private functions
+
+private extension MovieSearchViewModel {
+  
   func debounceTextChanges() {
     $searchText
       .dropFirst()
       .debounce(for: 0.5, scheduler: DispatchQueue.main)
       .sink { value in
-        self.loadMovies()
+        Task {
+          try await self.loadMovies()
+        }
       }
       .store(in: &cancellables)
   }
   
-  func loadMovies() {
-    movieService.getMovies(for: searchText) { movies in
+  func loadMovies() async throws {
+    do {
+      try await movieService.getMovies(for: searchText) { movies in
+        DispatchQueue.main.async {
+          let results = movies?.results ?? []
+          self.state = results.isEmpty ? .noResults : .success(results)
+        }
+      }
+    } catch let error {
+      // Handle the error in the UI by setting the state
       DispatchQueue.main.async {
-        self.movies = movies?.results ?? []
+        self.state = .error(error)
       }
     }
   }
