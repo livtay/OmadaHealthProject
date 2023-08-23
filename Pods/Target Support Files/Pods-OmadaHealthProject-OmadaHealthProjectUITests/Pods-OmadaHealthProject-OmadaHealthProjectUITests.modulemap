@@ -1,0 +1,6 @@
+framework module Pods_OmadaHealthProject_OmadaHealthProjectUITests {
+  umbrella header "Pods-OmadaHealthProject-OmadaHealthProjectUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

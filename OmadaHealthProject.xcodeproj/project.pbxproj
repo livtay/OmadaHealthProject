@@ -7,13 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01C47A3E93D0D3302926545F /* Pods_OmadaHealthProject_OmadaHealthProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 618FCD35E7D17243D3B62FEA /* Pods_OmadaHealthProject_OmadaHealthProjectUITests.framework */; };
+		0F36C1C88582BB4D68CEDEAB /* Pods_OmadaHealthProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14FC7DE7323D3B582F7913E6 /* Pods_OmadaHealthProjectTests.framework */; };
 		48539AC92A95191D006C188F /* OmadaHealthProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48539AC82A95191D006C188F /* OmadaHealthProjectApp.swift */; };
-		48539ACB2A95191D006C188F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48539ACA2A95191D006C188F /* ContentView.swift */; };
+		48539ACB2A95191D006C188F /* MovieSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48539ACA2A95191D006C188F /* MovieSearchView.swift */; };
 		48539ACD2A95191F006C188F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48539ACC2A95191F006C188F /* Assets.xcassets */; };
 		48539AD02A95191F006C188F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48539ACF2A95191F006C188F /* Preview Assets.xcassets */; };
 		48539ADA2A95191F006C188F /* OmadaHealthProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48539AD92A95191F006C188F /* OmadaHealthProjectTests.swift */; };
 		48539AE42A95191F006C188F /* OmadaHealthProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48539AE32A95191F006C188F /* OmadaHealthProjectUITests.swift */; };
 		48539AE62A95191F006C188F /* OmadaHealthProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48539AE52A95191F006C188F /* OmadaHealthProjectUITestsLaunchTests.swift */; };
+		48539AF72A95215A006C188F /* MovieSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48539AF62A95215A006C188F /* MovieSearchViewModel.swift */; };
+		48539AFA2A952590006C188F /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48539AF92A952590006C188F /* Movie.swift */; };
+		48539AFD2A952A8B006C188F /* TMDBService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48539AFC2A952A8B006C188F /* TMDBService.swift */; };
+		48539AFF2A952C52006C188F /* MoviesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48539AFE2A952C52006C188F /* MoviesResponse.swift */; };
+		48539B012A95421A006C188F /* MovieRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48539B002A95421A006C188F /* MovieRow.swift */; };
+		48539B032A95667F006C188F /* MovieDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48539B022A95667F006C188F /* MovieDetailsView.swift */; };
+		5730B5C3BCA7340BD8433736 /* Pods_OmadaHealthProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 951FFEDBB5CC611EDBD7CF8D /* Pods_OmadaHealthProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +43,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14FC7DE7323D3B582F7913E6 /* Pods_OmadaHealthProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OmadaHealthProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27FB9F0968CF0038171B75F7 /* Pods-OmadaHealthProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmadaHealthProject.debug.xcconfig"; path = "Target Support Files/Pods-OmadaHealthProject/Pods-OmadaHealthProject.debug.xcconfig"; sourceTree = "<group>"; };
+		2A80C502263605FD6814B793 /* Pods-OmadaHealthProject-OmadaHealthProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmadaHealthProject-OmadaHealthProjectUITests.debug.xcconfig"; path = "Target Support Files/Pods-OmadaHealthProject-OmadaHealthProjectUITests/Pods-OmadaHealthProject-OmadaHealthProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3F623AE656C0C75D402645B9 /* Pods-OmadaHealthProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmadaHealthProjectTests.release.xcconfig"; path = "Target Support Files/Pods-OmadaHealthProjectTests/Pods-OmadaHealthProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		48539AC52A95191D006C188F /* OmadaHealthProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OmadaHealthProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48539AC82A95191D006C188F /* OmadaHealthProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmadaHealthProjectApp.swift; sourceTree = "<group>"; };
-		48539ACA2A95191D006C188F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		48539ACA2A95191D006C188F /* MovieSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchView.swift; sourceTree = "<group>"; };
 		48539ACC2A95191F006C188F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48539ACF2A95191F006C188F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		48539AD52A95191F006C188F /* OmadaHealthProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OmadaHealthProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +57,17 @@
 		48539ADF2A95191F006C188F /* OmadaHealthProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OmadaHealthProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		48539AE32A95191F006C188F /* OmadaHealthProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmadaHealthProjectUITests.swift; sourceTree = "<group>"; };
 		48539AE52A95191F006C188F /* OmadaHealthProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmadaHealthProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		48539AF62A95215A006C188F /* MovieSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchViewModel.swift; sourceTree = "<group>"; };
+		48539AF92A952590006C188F /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		48539AFC2A952A8B006C188F /* TMDBService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBService.swift; sourceTree = "<group>"; };
+		48539AFE2A952C52006C188F /* MoviesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesResponse.swift; sourceTree = "<group>"; };
+		48539B002A95421A006C188F /* MovieRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRow.swift; sourceTree = "<group>"; };
+		48539B022A95667F006C188F /* MovieDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsView.swift; sourceTree = "<group>"; };
+		618FCD35E7D17243D3B62FEA /* Pods_OmadaHealthProject_OmadaHealthProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OmadaHealthProject_OmadaHealthProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DB0F6F0D3C7375FB7A4C571 /* Pods-OmadaHealthProject-OmadaHealthProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmadaHealthProject-OmadaHealthProjectUITests.release.xcconfig"; path = "Target Support Files/Pods-OmadaHealthProject-OmadaHealthProjectUITests/Pods-OmadaHealthProject-OmadaHealthProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
+		951FFEDBB5CC611EDBD7CF8D /* Pods_OmadaHealthProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OmadaHealthProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B611C57FCB322B9D32E114EF /* Pods-OmadaHealthProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmadaHealthProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-OmadaHealthProjectTests/Pods-OmadaHealthProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FCC215BAD6B01D63FFE197E1 /* Pods-OmadaHealthProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmadaHealthProject.release.xcconfig"; path = "Target Support Files/Pods-OmadaHealthProject/Pods-OmadaHealthProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5730B5C3BCA7340BD8433736 /* Pods_OmadaHealthProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F36C1C88582BB4D68CEDEAB /* Pods_OmadaHealthProjectTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01C47A3E93D0D3302926545F /* Pods_OmadaHealthProject_OmadaHealthProjectUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +105,8 @@
 				48539AD82A95191F006C188F /* OmadaHealthProjectTests */,
 				48539AE22A95191F006C188F /* OmadaHealthProjectUITests */,
 				48539AC62A95191D006C188F /* Products */,
+				C2224DC7109B4AC79B578BD5 /* Pods */,
+				A1672907D9586BDDF654F95E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,9 +123,12 @@
 		48539AC72A95191D006C188F /* OmadaHealthProject */ = {
 			isa = PBXGroup;
 			children = (
-				48539AC82A95191D006C188F /* OmadaHealthProjectApp.swift */,
-				48539ACA2A95191D006C188F /* ContentView.swift */,
-				48539ACC2A95191F006C188F /* Assets.xcassets */,
+				48539AF32A951C61006C188F /* App Core */,
+				48539AF82A95257F006C188F /* Models */,
+				48539AF52A95213D006C188F /* View Models */,
+				48539AF42A951C76006C188F /* Views */,
+				48539AF22A95193D006C188F /* Resources */,
+				48539AFB2A952A61006C188F /* Services */,
 				48539ACE2A95191F006C188F /* Preview Content */,
 			);
 			path = OmadaHealthProject;
@@ -127,6 +159,80 @@
 			path = OmadaHealthProjectUITests;
 			sourceTree = "<group>";
 		};
+		48539AF22A95193D006C188F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				48539ACC2A95191F006C188F /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		48539AF32A951C61006C188F /* App Core */ = {
+			isa = PBXGroup;
+			children = (
+				48539AC82A95191D006C188F /* OmadaHealthProjectApp.swift */,
+			);
+			path = "App Core";
+			sourceTree = "<group>";
+		};
+		48539AF42A951C76006C188F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				48539B022A95667F006C188F /* MovieDetailsView.swift */,
+				48539B002A95421A006C188F /* MovieRow.swift */,
+				48539ACA2A95191D006C188F /* MovieSearchView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		48539AF52A95213D006C188F /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				48539AF62A95215A006C188F /* MovieSearchViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		48539AF82A95257F006C188F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				48539AF92A952590006C188F /* Movie.swift */,
+				48539AFE2A952C52006C188F /* MoviesResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		48539AFB2A952A61006C188F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				48539AFC2A952A8B006C188F /* TMDBService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A1672907D9586BDDF654F95E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				951FFEDBB5CC611EDBD7CF8D /* Pods_OmadaHealthProject.framework */,
+				618FCD35E7D17243D3B62FEA /* Pods_OmadaHealthProject_OmadaHealthProjectUITests.framework */,
+				14FC7DE7323D3B582F7913E6 /* Pods_OmadaHealthProjectTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C2224DC7109B4AC79B578BD5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				27FB9F0968CF0038171B75F7 /* Pods-OmadaHealthProject.debug.xcconfig */,
+				FCC215BAD6B01D63FFE197E1 /* Pods-OmadaHealthProject.release.xcconfig */,
+				2A80C502263605FD6814B793 /* Pods-OmadaHealthProject-OmadaHealthProjectUITests.debug.xcconfig */,
+				7DB0F6F0D3C7375FB7A4C571 /* Pods-OmadaHealthProject-OmadaHealthProjectUITests.release.xcconfig */,
+				B611C57FCB322B9D32E114EF /* Pods-OmadaHealthProjectTests.debug.xcconfig */,
+				3F623AE656C0C75D402645B9 /* Pods-OmadaHealthProjectTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,6 +240,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48539AE92A95191F006C188F /* Build configuration list for PBXNativeTarget "OmadaHealthProject" */;
 			buildPhases = (
+				5D5FC9CB044B23813F248E97 /* [CP] Check Pods Manifest.lock */,
 				48539AC12A95191D006C188F /* Sources */,
 				48539AC22A95191D006C188F /* Frameworks */,
 				48539AC32A95191D006C188F /* Resources */,
@@ -151,6 +258,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48539AEC2A95191F006C188F /* Build configuration list for PBXNativeTarget "OmadaHealthProjectTests" */;
 			buildPhases = (
+				1FDEFE613ECE0CA388111D58 /* [CP] Check Pods Manifest.lock */,
 				48539AD12A95191F006C188F /* Sources */,
 				48539AD22A95191F006C188F /* Frameworks */,
 				48539AD32A95191F006C188F /* Resources */,
@@ -169,6 +277,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48539AEF2A95191F006C188F /* Build configuration list for PBXNativeTarget "OmadaHealthProjectUITests" */;
 			buildPhases = (
+				DFB48C523DE7DADD87D60C0D /* [CP] Check Pods Manifest.lock */,
 				48539ADB2A95191F006C188F /* Sources */,
 				48539ADC2A95191F006C188F /* Frameworks */,
 				48539ADD2A95191F006C188F /* Resources */,
@@ -252,13 +361,88 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1FDEFE613ECE0CA388111D58 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OmadaHealthProjectTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D5FC9CB044B23813F248E97 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OmadaHealthProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFB48C523DE7DADD87D60C0D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OmadaHealthProject-OmadaHealthProjectUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		48539AC12A95191D006C188F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48539ACB2A95191D006C188F /* ContentView.swift in Sources */,
+				48539AFD2A952A8B006C188F /* TMDBService.swift in Sources */,
+				48539ACB2A95191D006C188F /* MovieSearchView.swift in Sources */,
+				48539B032A95667F006C188F /* MovieDetailsView.swift in Sources */,
+				48539AFF2A952C52006C188F /* MoviesResponse.swift in Sources */,
 				48539AC92A95191D006C188F /* OmadaHealthProjectApp.swift in Sources */,
+				48539B012A95421A006C188F /* MovieRow.swift in Sources */,
+				48539AFA2A952590006C188F /* Movie.swift in Sources */,
+				48539AF72A95215A006C188F /* MovieSearchViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +595,7 @@
 		};
 		48539AEA2A95191F006C188F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27FB9F0968CF0038171B75F7 /* Pods-OmadaHealthProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -440,6 +625,7 @@
 		};
 		48539AEB2A95191F006C188F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCC215BAD6B01D63FFE197E1 /* Pods-OmadaHealthProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -469,6 +655,7 @@
 		};
 		48539AED2A95191F006C188F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B611C57FCB322B9D32E114EF /* Pods-OmadaHealthProjectTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -489,6 +676,7 @@
 		};
 		48539AEE2A95191F006C188F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F623AE656C0C75D402645B9 /* Pods-OmadaHealthProjectTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -509,6 +697,7 @@
 		};
 		48539AF02A95191F006C188F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A80C502263605FD6814B793 /* Pods-OmadaHealthProject-OmadaHealthProjectUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +716,7 @@
 		};
 		48539AF12A95191F006C188F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DB0F6F0D3C7375FB7A4C571 /* Pods-OmadaHealthProject-OmadaHealthProjectUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
