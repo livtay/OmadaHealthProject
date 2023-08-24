@@ -1,6 +1,6 @@
 # Omada Health Movie Search App
 
-https://github.com/livtay/OmadaHealthProject/assets/20843932/8513735c-9792-47aa-b89d-8c8fc12f70fe
+https://github.com/livtay/OmadaHealthProject/assets/20843932/74983590-82ce-4cc4-ae4d-04127803eedf
 
 ## Intro
 
