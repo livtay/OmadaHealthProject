@@ -31,10 +31,11 @@ final class MovieSearchViewModel: ObservableObject {
 
 private extension MovieSearchViewModel {
   
+  // Combine debounce while user types to limit API calls and improve app speed and performance
   func debounceTextChanges() {
     $searchText
       .dropFirst()
-      .debounce(for: 0.5, scheduler: DispatchQueue.main)
+      .debounce(for: 0.2, scheduler: DispatchQueue.main)
       .sink { value in
         Task {
           try await self.loadMovies()
